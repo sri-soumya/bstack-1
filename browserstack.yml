@@ -1,5 +1,6 @@
-userName: soumyasrivastava_9Q1faz
-accessKey: M7yVHdMnQmCTzchUjBxN
+# envFile: /Users/soumyasrivastava/Desktop/test/bstack-1/test.env
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
 platforms:
   - os: OS X
     osVersion: Sonoma
@@ -21,9 +22,9 @@ platforms:
     osVersion: Ventura
     browserName: Firefox
     browserVersion: latest
-browserstackLocal: true
-buildName: browserstack-build-1
-projectName: BrowserStack Sample
+browserstackLocal: false
+buildName: ${BROWSERSTACK_BUILD_NAME}
+projectName: bstack-1
 debug: false
 networkLogs: false
 consoleLogs: errors
